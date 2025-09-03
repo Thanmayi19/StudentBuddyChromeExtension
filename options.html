@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Buddy Settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <h2>⚙️ Student Buddy Settings</h2>
+
+    <!-- Quick Links Manager -->
+    <section>
+      <h3>Custom Quick Links</h3>
+      <input type="text" id="linkName" placeholder="Name (e.g. Canvas)" />
+      <input type="url" id="linkUrl" placeholder="URL (https://...)" />
+      <button id="addLink">Add Link</button>
+      <ul id="linkList"></ul>
+    </section>
+
+    <!-- Dark Mode -->
+    <section>
+      <h3>Appearance</h3>
+      <label>
+        <input type="checkbox" id="darkModeToggle" /> Enable Dark Mode
+      </label>
+    </section>
+
+    <script src="options.js"></script>
+  </body>
+</html>

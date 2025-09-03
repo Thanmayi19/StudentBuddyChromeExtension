@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Buddy</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h2>🎓 Student Buddy</h2>
+
+    <!-- Dark mode toggle -->
+    <button id="toggleTheme">🌙 Dark Mode</button>
+
+    <!-- Quick Links -->
+    <div id="links">
+      <h3>Quick Links</h3>
+      <ul id="defaultLinks">
+        <li><a href="https://canvas.asu.edu" target="_blank">Canvas</a></li>
+        <li><a href="https://mail.google.com" target="_blank">Email</a></li>
+        <li>
+          <a href="https://drive.google.com" target="_blank">Google Drive</a>
+        </li>
+      </ul>
+
+      <!-- Custom Links -->
+      <input type="text" id="newLinkName" placeholder="Site name" />
+      <input type="url" id="newLinkURL" placeholder="https://" />
+      <button id="addLink">Add Link</button>
+      <ul id="customLinks"></ul>
+    </div>
+
+    <!-- To-do list -->
+    <div id="todo">
+      <h3>To-Do List</h3>
+      <input type="text" id="taskInput" placeholder="New task..." />
+      <button id="addTask">Add</button>
+      <ul id="taskList"></ul>
+    </div>
+
+    <!-- Timer -->
+    <div id="timerSection">
+      <h3>Timer</h3>
+      <div id="timer">25:00</div>
+      <div class="timer-inputs">
+        <input type="number" id="hoursInput" placeholder="H" min="0" max="23" />
+        <span>:</span>
+        <input
+          type="number"
+          id="minutesInput"
+          placeholder="M"
+          min="0"
+          max="59"
+        />
+        <span>:</span>
+        <input
+          type="number"
+          id="secondsInput"
+          placeholder="S"
+          min="0"
+          max="59"
+        />
+      </div>
+      <div class="timer-buttons">
+        <button id="setTime">Set</button>
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 15px;
+  width: 300px;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+h3 {
+  margin-top: 20px;
+  color: #34495e;
+}
+
+input {
+  margin: 5px 0;
+  padding: 5px;
+  width: 90%;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+#linkList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#linkList li {
+  margin: 5px 0;
+}

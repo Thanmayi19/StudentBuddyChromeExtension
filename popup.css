@@ -1,0 +1,151 @@
+body {
+  width: 250px;
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  background: #ffffff;
+  color: #2c3e50;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #2c3e50;
+  color: #ecf0f1;
+}
+
+h2 {
+  text-align: center;
+  color: inherit;
+}
+
+h3 {
+  margin-top: 15px;
+  font-size: 14px;
+  color: inherit;
+}
+
+button {
+  padding: 5px;
+  margin: 5px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background: #3498db;
+  color: white;
+  font-size: 12px;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+#links ul,
+#taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#links li,
+#taskList li {
+  margin: 5px 0;
+}
+
+#taskInput,
+#newLinkName,
+#newLinkURL {
+  width: calc(100% - 20px);
+  margin: 3px 0;
+  padding: 5px;
+  font-size: 12px;
+}
+
+/* Timer input styling */
+.timer-inputs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 8px 0;
+  justify-content: center;
+  width: 100%;
+}
+
+.timer-inputs span {
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 14px;
+}
+
+#hoursInput,
+#minutesInput,
+#secondsInput {
+  flex: 1;
+  max-width: 50px;
+  padding: 6px 4px;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: white;
+}
+
+#hoursInput:focus,
+#minutesInput:focus,
+#secondsInput:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 3px rgba(52, 152, 219, 0.3);
+}
+
+/* Dark mode for timer inputs */
+body.dark .timer-inputs span {
+  color: #ecf0f1;
+}
+
+body.dark #hoursInput,
+body.dark #minutesInput,
+body.dark #secondsInput {
+  background: #34495e;
+  border-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+body.dark #hoursInput:focus,
+body.dark #minutesInput:focus,
+body.dark #secondsInput:focus {
+  border-color: #3498db;
+}
+
+#timer {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Timer buttons styling */
+.timer-buttons {
+  display: flex;
+  width: 100%;
+  gap: 3px;
+  margin-top: 8px;
+}
+
+.timer-buttons button {
+  flex: 1;
+  padding: 6px 4px;
+  font-size: 11px;
+  margin: 0;
+}
+
+/* Force consistent link colors */
+#links a {
+  color: #2980b9; /* nice blue */
+  text-decoration: none;
+}
+
+#links a:visited {
+  color: #2980b9; /* same color even after visited */
+}
+
+#links a:hover {
+  text-decoration: underline;
+}
